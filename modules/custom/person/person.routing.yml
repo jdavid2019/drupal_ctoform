@@ -1,0 +1,23 @@
+person.form:
+  path: '/person/details'
+  defaults:
+    _title: 'Application form'
+    _form: '\Drupal\person\Form\PersonForm'
+  requirements:
+    _permission: 'access content'
+
+person.thankyou:
+  path: '/person/details/thankyou'
+  defaults:
+    _title: 'Thank You Page'
+    _controller: '\Drupal\person\Controller\ThankyouController::successpage'
+  requirements:
+    _permission: 'access content'
+
+person.getdetails:
+  path: '/person/getdetails'
+  defaults:
+    _title: 'Fetch detail of Employee'
+    _controller: '\Drupal\person\Controller\ThankyouController::getDetails'
+  requirements:
+    _permission: 'access content'
